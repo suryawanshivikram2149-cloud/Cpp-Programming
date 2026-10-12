@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int choice;
+	do
+	{
+	    cout << "\n===== FOOD ORDERING SYSTEM =====" << endl;
+	    cout << "1. Pizza" << endl;
+	    cout << "2. Pasta" << endl;
+	    cout << "3. Burger" << endl;
+	    cout << "4. Sandwich" << endl;
+	    cout << "5. French Fries" << endl;
+	    cout << "6. Exit" << endl;
+
+	    cout << "Enter your choice: ";
+	    cin >> choice;
+
+	    switch (choice)
+	    {
+	        case 1:
+	            cout << "You selected Pizza." << endl;
+	            break;
+
+	        case 2:
+	            cout << "You selected Pasta." << endl;
+	            break;
+
+	        case 3:
+	            cout << "You selected Burger." << endl;
+	            break;
+
+	        case 4:
+	            cout << "You selected Sandwich." << endl;
+	            break;
+
+	        case 5:
+	            cout << "You selected French Fries." << endl;
+	            break;
+	
+	        case 6:
+	            cout << "Thank you for visiting!" << endl;
+	            cout << "Exiting the Food Ordering System." << endl;
+	            break;
+	
+    	    default:
+	            cout << "Invalid choice! Please select a valid item." << endl;
+	    }
+	
+	} while (choice != 6);
+	
+	return 0;
+	
+}
