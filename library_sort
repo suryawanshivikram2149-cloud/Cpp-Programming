@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	int bookIDs[5];
+	int n = 5;
+
+	cout<<"Enter 5 book IDs:\n";
+
+	for(int i = 0; i < 5; i++)
+	{
+		cout<<"Book"<<i+1<<":";
+		cin>> bookIDs[i];
+	}
+
+	for (int i  = 0; i< n-1; i++)
+	{
+		for(int j=0; j<n-i-1; j++)
+		{
+			if (bookIDs[j]>bookIDs[j+1])
+			{
+				int temp = bookIDs[j];
+				bookIDs[j] = bookIDs[j+1];
+				bookIDs[j+1] = temp;
+			}
+		}
+	}
+
+	cout<<"\nSorted book IDs in ascending order:\n";
+	for (int i = 0; i < n; i++)
+	{
+		cout<<bookIDs[i]<<" ";
+	}
+	cout<<endl;
+
+	return 0;
+}
