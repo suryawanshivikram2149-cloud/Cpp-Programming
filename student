@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+class student
+{
+	public:
+	string name;
+	int Roll;
+	float Mark;
+	void display()
+	{
+		cout<<" Name :"<<name<<endl;
+		cout<<"Roll no. :"<<Roll<<endl;
+		cout<<"Mark :"<<Mark<<endl;
+	}
+
+};
+int main()
+{
+	student S1;
+	S1.name="Tilak Om Bhoite";
+	S1.Roll=2;
+	S1.Mark=89;
+	S1.display();
+	return 0;
+}
